@@ -41,8 +41,7 @@ export default function Todo() {
         setTodos(newTodos)
     }
     const clearAllTodos = () => {
-        const emptyTodos = [];
-        setTodos(emptyTodos)
+        setTodos([])
     }
     const handleClick = (e) => {
         e.preventDefault()
