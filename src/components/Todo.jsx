@@ -67,7 +67,7 @@ export default function Todo() {
             <input className="todoInput" type="text" value={content} onChange={(e) => setContent(e.target.value)} placeholder="input your todo here..."/><br />
             <button className="todoBtn" type="submit" onClick={handleClick}>Add Todo</button>
         </form>
-        <Trash size={60} onClick={() => clearAllTodos()} className="mainTrash"/>
+        <Trash size={60} onClick={clearAllTodos} className="mainTrash"/>
         {
             totalTodos === 0 ?
             <p className="noTodosText">No todos yet</p> :
