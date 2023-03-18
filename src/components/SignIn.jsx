@@ -10,7 +10,7 @@ export default function SignIn() {
   const navigate = useNavigate()
 
   const { signInn } = UserAuth()
-  const handleClick = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
     try {
@@ -29,7 +29,7 @@ export default function SignIn() {
     <div>
     <div className='login'>
       <h2>Login to your Account</h2>
-    <form onSubmit={handleClick}>
+    <form onSubmit={handleSubmit}>
       <input type="email" className='text' name="username" onChange={(e) => setEmail(e.target.value)}/>
       <span>Email</span>
       <br />
